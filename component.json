@@ -1,0 +1,25 @@
+{
+  "title": "Logic Gateway Component",
+  "description": "",
+  "docsUrl": "https://github.com/openintegrationhub/logic-gateway-component",
+  "buildType": "docker",
+  "credentials": {
+    "fields": {
+      "logicInstruction": {
+        "label": "Logic instruction",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "Instruction set containing the logic to be performed",
+        "placeholder": "{}"
+      }
+    }
+  },
+  "triggers": {
+  },
+  "actions": {
+    "processStep": {
+      "title": "Execute a predefined logic for a step",
+      "main": "./lib/actions/exec.js"
+    }
+  }
+}
