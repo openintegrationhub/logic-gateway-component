@@ -14,10 +14,8 @@
       }
     }
   },
-  "triggers": {
-  },
   "actions": {
-    "processStep": {
+    "exec": {
       "title": "Execute a predefined logic for a step",
       "main": "./lib/actions/exec.js"
     }
